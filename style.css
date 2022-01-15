@@ -28,14 +28,17 @@ a{
     padding: 10px;
     border-radius: 15px; 
 }
+/* logo start */
 .logo{
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
 }
 h2{
     font-size: 40px;
     text-align: center;
 }
+/* logo end  */
+
 
 /* --------blogs start--------- */
 .blog{
@@ -66,27 +69,7 @@ h2{
     color: rgb(238, 175, 15);
 }
 /* ..........footer start........ */
-/* h5{
-    text-align: center;
-    color: white;
-    font-size: 20px;
-    line-height: 20px;
-    padding: 20px;
 
-}
-.first-class{
-    text-align: center;
-    color: white;
-    padding-bottom: 100px;
-}
-.fab{
-    color: white;
-    display: inline-block;
-}
-footer{
-    background-color: rgb(18, 18, 102);
-    
-} */
 .footer-main-div{
     width: 100%;
     height: auto;
@@ -119,4 +102,25 @@ footer{
 }
 
 /* ........media query start....... */
+/* .......
+media query for small device........ */
 
+
+@media only screen and (max-width:700px){
+   .half img{
+       top: 0 auto;
+   }
+    .blog{
+        grid-template-columns: repeat(1,1fr);
+    }
+    .logo{
+        grid-template-columns: repeat(3,1fr);
+        flex-direction: column; 
+    }
+}
+/* ....tablet device.... */
+@media only screen and (min-width:700px)and (max-width:1000px){
+    .blog{
+        grid-template-columns: repeat(2,1fr);
+}
+}
