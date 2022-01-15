@@ -32,3 +32,91 @@ a{
     display: flex;
     justify-content: space-between;
 }
+h2{
+    font-size: 40px;
+    text-align: center;
+}
+
+/* --------blogs start--------- */
+.blog{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 20px;
+    
+}
+.blogs{
+    box-shadow: 2px 2px 2px 2px gray;
+    padding-left: 10px;
+    padding-top: 10px;
+}
+
+.blogs:hover{
+    transform: translateY(20px);
+    transition: 0.7s;
+}
+.blog-title{
+   font-size: 25px;
+}
+.blog-ratings{
+    display: flex;
+    align-items: center;
+    
+}
+.fas{
+    color: rgb(238, 175, 15);
+}
+/* ..........footer start........ */
+/* h5{
+    text-align: center;
+    color: white;
+    font-size: 20px;
+    line-height: 20px;
+    padding: 20px;
+
+}
+.first-class{
+    text-align: center;
+    color: white;
+    padding-bottom: 100px;
+}
+.fab{
+    color: white;
+    display: inline-block;
+}
+footer{
+    background-color: rgb(18, 18, 102);
+    
+} */
+.footer-main-div{
+    width: 100%;
+    height: auto;
+    margin: auto;
+    background-color: navy;
+    padding: 20px 0px;
+}
+.footer-title{
+    color: white;
+    text-align: center;
+} 
+.footer-title h5{
+    font-size: 20px;
+}
+.footer-social-icons{
+    width: 100%;
+    height: auto;
+    margin: auto;
+}
+.footer-social-icons ul{
+    margin: 0px;
+    padding: 0px;
+    text-align: center;
+} 
+.footer-social-icons ul li{
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    margin: 0px 10px;
+}
+
+/* ........media query start....... */
+
